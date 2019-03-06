@@ -1,3 +1,12 @@
-<p>
-  list-prestations works!
-</p>
+<p> Liste des prestations</p>
+<table class="table table-striped">
+    <thead>
+    <tr >
+      <th scope="col" *ngFor="let item of tab">{{item}}</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <app-item-prestation *ngFor="let obj of collections" [col]="obj"></app-item-prestation>
+    </tbody>
+  </table>

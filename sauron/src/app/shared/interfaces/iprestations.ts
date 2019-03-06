@@ -1,4 +1,4 @@
-import { State } from '../enums/state.enum';
+import { State } from "../enums/State";
 
 export interface IPrestations {
   id: string;

@@ -1,5 +1,5 @@
 import { IPrestations } from '../interfaces/iprestations';
-import { State } from '../enums/state.enum';
+import { State } from '../enums/State';
 
 export class Prestation implements IPrestations{
   id: string;  typePresta: string;

@@ -9,10 +9,13 @@ import { Prestation } from 'src/app/shared/models/prestation.model';
 })
 export class ListPrestationsComponent implements OnInit {
 collections: Prestation[];
+tab: string[];
   constructor( private services: PrestationService) { }
 
   ngOnInit() {
-    this.collections = this.services.collection;
+    this.collections = this.services.collections;
+
+    this.tab = ['Id', 'Nom Client', 'Nombre jour', 'Etat', 'Type prestation', 'TauxTva', 'Commentaire', 'TJMHT', 'Total TTC', 'Total HT'];
   }
 
 }

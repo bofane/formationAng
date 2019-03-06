@@ -1,0 +1,11 @@
+@import '../../../../../stylings/theme';
+
+.state-option {
+  background-color: $dark-color;
+}
+.state-confirme{
+ background-color:  $palette-color-three;
+}
+.state-annule{
+background-color: $palette-color-one;
+}
