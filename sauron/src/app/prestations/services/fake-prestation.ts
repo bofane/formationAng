@@ -1,5 +1,5 @@
 import { Prestation } from 'src/app/shared/models/prestation.model';
-import { State } from "src/app/shared/enums/State";
+import { Client } from 'src/app/shared/models/client.model';
 
 export const fakePrestations: Prestation[] = [
   new Prestation(
@@ -20,3 +20,9 @@ export const fakePrestations: Prestation[] = [
     }
   )
 ];
+
+export const fakeClient: Client[] = [
+  new Client( {id: 'dgsfgdf', name: 'alfredo', prenom: 'Dasilva' }),
+  new Client({ id: 'zfhsgh', name: 'GIL', prenom: 'JAUNO'  })
+];
+

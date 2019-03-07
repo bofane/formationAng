@@ -2,7 +2,7 @@
   <th>{{ col.id }}</th>
   <td>{{ col.client }}</td>
   <td>{{ col.nbJours }}</td>
-  <td>
+  <td appAppState>
     <select class="form-control">
       <option *ngFor="let state of states | keyvalue"  [value]="state.value"
       [selected]="col.state === state.value">
@@ -13,7 +13,7 @@
   <td>{{ col.typePresta  }}</td>
   <td>{{ col.tauxTva  }}</td>
   <td>{{ col.comment  }}</td>
-  <td>{{ col.tjmHt |  currency:'EUR' }}</td>
+  <td>{{ col.tjmHt  }}</td>
   <td>{{ col | total: 'HT' | currency:'EUR'  }}</td>
   <td>{{ col | total: 'TTC' | currency:'EUR'  }}</td>
 </tr>

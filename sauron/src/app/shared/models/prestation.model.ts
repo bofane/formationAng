@@ -16,7 +16,7 @@ constructor(field?: Partial<Prestation>) {
   }
 }
   totalHT(): number {
-    return this.tjmHt = this.nbJours;
+    return  this.nbJours;
   }
   totalTTC( tva?): number {
 

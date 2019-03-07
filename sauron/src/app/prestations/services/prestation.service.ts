@@ -12,12 +12,18 @@ export class PrestationService {
      this.collection = fakePrestations;
   }
   //get collection
-get collections():Prestation[]{
+get collection():Prestation[]{
   return this._collection;
 }
 //set collection
 set collection(col: Prestation[]) {
   this._collection = col;
 }
+
+add(item: Prestation){
+  this.collection.push(item);
+
+}
+
 }
 

@@ -13,7 +13,7 @@ tab: string[];
   constructor( private services: PrestationService) { }
 
   ngOnInit() {
-    this.collections = this.services.collections;
+    this.collections = this.services.collection;
 
     this.tab = ['Id', 'Nom Client', 'Nombre jour', 'Etat', 'Type prestation', 'TauxTva', 'Commentaire', 'TJMHT', 'Total TTC', 'Total HT'];
   }

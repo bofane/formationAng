@@ -1,0 +1,41 @@
+<div class="container">
+    <form #myForm="ngForm">
+
+        <div class="form-group">
+          <label for="type">Type</label>
+          <input  class="form-control" id="type" >
+
+        </div>
+
+        <div class="form-group">
+          <label for="client">Client</label>
+          <input type="text" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+          <label for="tjm">TJM</label>
+          <input type="number" class="form-control"  >
+
+        </div>
+
+        <div class="form-group">
+          <label for="tva">TVA</label>
+          <input  type="number" class="form-control" >
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="state">State</label>
+          <select [(ngModel)]="init.state"name="state" class="form-control" id="state">
+            <option *ngFor=" let state  of states | keyvalue" [value]="state.value">{{state.value}}</option>
+          </select>
+        </div> -->
+
+        <div class="form-group">
+            <label for="comment">comment</label>
+              <textarea class="form-control" ></textarea>
+        </div>
+
+        <button  [disabled]="myForm.invalid" type="submit" class="btn btn-primary">Ajout</button>
+      </form>
+    </div>
