@@ -7,6 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login/login.module';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { TemplateAComponent } from './templates/template-a/template-a.component';
+import { TemplateBComponent } from './templates/template-b/template-b.component';
+import { SharedModule } from './shared/shared.module';
+import { TemplatesModule } from './templates/templates.module';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 registerLocaleData(localeFr, 'fr');
 @NgModule({
@@ -18,7 +26,11 @@ registerLocaleData(localeFr, 'fr');
     NgbModule,
     UiModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    TemplatesModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
 
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'fr' }],

@@ -14,7 +14,8 @@ import { FormPrestationRectiveComponent } from './components/form-prestation-rec
 
 
 @NgModule({
-  declarations: [PrestationsComponent, ListPrestationsComponent, ItemPrestationComponent, ListClientComponent, FormPrestationComponent, AddPrestationComponent, PageAddPrestationComponent, FormPrestationRectiveComponent],
+// tslint:disable-next-line: max-line-length
+  declarations: [PrestationsComponent, ListPrestationsComponent, ItemPrestationComponent, FormPrestationComponent, AddPrestationComponent, PageAddPrestationComponent, FormPrestationRectiveComponent],
   imports: [
     CommonModule,
     PrestationRoutingModule,
